@@ -1,21 +1,18 @@
-
-
 import 'dart:ui';
-
 
 enum ProjectileType {
   player,
   enemyStraight,
   bossHoming,
-  bossExploder, 
-  bossFragment, 
+  bossExploder,
+  bossFragment,
 }
 
 class Projectile {
   Offset position;
   Offset velocity;
   ProjectileType type;
-  int homingDuration; 
+  int homingDuration;
 
   Projectile({
     required this.position,
